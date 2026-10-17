@@ -9,3 +9,4 @@
 | `retro_world/` | 3D_Retro_World 0.01 | See the author's terms |
 | `fences/` | all_fences | No licence file included; check the source |
 | `cars/` | Designersoup Low Poly Car Pack Volume 1 | See the author's terms |
+| `rides/minhocao/` | [Animated Kiddie-coaster](https://sketchfab.com/3d-models/animated-kiddie-coaster-cb700fbf73dd4f32aff34a2996fb5b0c) by ansonweese, recoloured to look like the Minhocão | CC BY 4.0, credit required |
