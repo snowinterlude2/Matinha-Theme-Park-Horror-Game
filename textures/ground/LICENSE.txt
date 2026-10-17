@@ -1,0 +1,7 @@
+Ground textures from the "SBS - Horror Texture Pack 128x128" by Screaming Brain Studios,
+released under CC0 1.0 (public domain). No credit required.
+
+asphalt.png       = Horror_Stone_01
+asphalt_lane.png  = Horror_Stone_02
+concrete.png      = Horror_Stone_11
+grass.png         = Horror_Floor_01

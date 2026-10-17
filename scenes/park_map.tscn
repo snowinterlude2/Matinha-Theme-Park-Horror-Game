@@ -1,18 +1,42 @@
 [gd_scene format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/player.tscn" id="1_player"]
+[ext_resource type="Texture2D" path="res://textures/ground/grass.png" id="tex_grass"]
+[ext_resource type="Texture2D" path="res://textures/ground/concrete.png" id="tex_concrete"]
+[ext_resource type="Texture2D" path="res://textures/ground/asphalt.png" id="tex_asphalt"]
+[ext_resource type="Texture2D" path="res://textures/ground/asphalt_lane.png" id="tex_asphalt_lane"]
 
 [sub_resource type="StandardMaterial3D" id="mat_grass"]
-albedo_color = Color(0.25, 0.32, 0.18, 1)
+albedo_color = Color(1.0, 1.0, 1.0, 1)
+albedo_texture = ExtResource("tex_grass")
+texture_filter = 2
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv1_scale = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="mat_concrete"]
-albedo_color = Color(0.36, 0.36, 0.34, 1)
+albedo_color = Color(0.6, 0.6, 0.6, 1)
+albedo_texture = ExtResource("tex_concrete")
+texture_filter = 2
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv1_scale = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="mat_asphalt"]
-albedo_color = Color(0.2, 0.2, 0.21, 1)
+albedo_color = Color(1.0, 1.0, 1.0, 1)
+albedo_texture = ExtResource("tex_asphalt")
+texture_filter = 2
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv1_scale = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="mat_lane"]
-albedo_color = Color(0.3, 0.3, 0.32, 1)
+albedo_color = Color(1.0, 1.0, 1.0, 1)
+albedo_texture = ExtResource("tex_asphalt_lane")
+texture_filter = 2
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv1_scale = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="mat_brick"]
 albedo_color = Color(0.45, 0.25, 0.17, 1)
