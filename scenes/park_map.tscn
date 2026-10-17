@@ -63,6 +63,11 @@
 [ext_resource type="PackedScene" path="res://assets/trees/dead_tree_rt_2.glb" id="e62"]
 [ext_resource type="PackedScene" path="res://scenes/player.tscn" id="e63"]
 [ext_resource type="PackedScene" path="res://assets/rides/minhocao/minhocao_coaster.glb" id="e_minhocao"]
+[ext_resource type="PackedScene" path="res://assets/rides/minhocao/kenney/queue-entrance.glb" id="e_k_queue_entrance"]
+[ext_resource type="PackedScene" path="res://assets/rides/minhocao/kenney/queue-straight.glb" id="e_k_queue_straight"]
+[ext_resource type="PackedScene" path="res://assets/rides/minhocao/kenney/queue-corner.glb" id="e_k_queue_corner"]
+[ext_resource type="PackedScene" path="res://assets/rides/minhocao/kenney/ride-entrance.glb" id="e_k_ride_entrance"]
+[ext_resource type="PackedScene" path="res://assets/rides/minhocao/kenney/stall-information.glb" id="e_k_stall_information"]
 
 [sub_resource type="StandardMaterial3D" id="s1"]
 albedo_color = Color(0.55, 0.6, 0.55, 1)
@@ -260,6 +265,9 @@ roughness = 0.4
 
 [sub_resource type="BoxShape3D" id="s_minhocao_train"]
 size = Vector3(8.05, 1.3, 1.07)
+
+[sub_resource type="BoxShape3D" id="s_minhocao_cabin"]
+size = Vector3(1.700, 2.550, 1.955)
 
 [node name="ParkMap" type="Node3D"]
 
@@ -4318,22 +4326,6 @@ scale = Vector3(0.918, 0.918, 0.918)
 [node name="Model" parent="Bushes/Bush_F1" instance=ExtResource("e55")]
 position = Vector3(-15.010, 0.090, 2.995)
 
-[node name="Bush_E2" type="Node3D" parent="Bushes"]
-position = Vector3(17.889, 0.000, -19.740)
-rotation = Vector3(0.000, 5.875, 0.000)
-scale = Vector3(0.964, 0.964, 0.964)
-
-[node name="Model" parent="Bushes/Bush_E2" instance=ExtResource("e53")]
-position = Vector3(-11.955, 0.050, 3.030)
-
-[node name="Bush_A1" type="Node3D" parent="Bushes"]
-position = Vector3(24.072, 0.000, -19.740)
-rotation = Vector3(0.000, 3.108, 0.000)
-scale = Vector3(0.777, 0.777, 0.777)
-
-[node name="Model" parent="Bushes/Bush_A1" instance=ExtResource("e56")]
-position = Vector3(0.005, 0.060, 3.115)
-
 [node name="Bush_F2" type="Node3D" parent="Bushes"]
 position = Vector3(31.872, 0.000, -19.740)
 rotation = Vector3(0.000, 3.935, 0.000)
@@ -6525,3 +6517,68 @@ position = Vector3(33.0, 0.05, -12.72)
 [node name="Shape" type="CollisionShape3D" parent="RideAreas/MinhocaoCoaster/MinhocaoRide/TrainBody"]
 position = Vector3(0.035, 0.94, -4.09)
 shape = SubResource("s_minhocao_train")
+
+[node name="MinhocaoQueue" type="Node3D" parent="RideAreas/MinhocaoCoaster"]
+
+[node name="queue_entrance1" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_entrance")]
+position = Vector3(17.000, 0.05, -12.720)
+rotation = Vector3(0.000, 0.000, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight2" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(17.000, 0.05, -14.720)
+rotation = Vector3(0.000, 0.000, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight3" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(17.000, 0.05, -16.720)
+rotation = Vector3(0.000, 0.000, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_corner4" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_corner")]
+position = Vector3(17.000, 0.05, -18.500)
+rotation = Vector3(0.000, 0.000, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight5" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(19.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight6" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(21.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight7" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(23.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight8" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(25.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="queue_straight9" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_queue_straight")]
+position = Vector3(27.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="ride_entrance10" parent="RideAreas/MinhocaoCoaster/MinhocaoQueue" instance=ExtResource("e_k_ride_entrance")]
+position = Vector3(29.000, 0.05, -18.500)
+rotation = Vector3(0.000, 1.571, 0.000)
+scale = Vector3(2.000, 2.000, 2.000)
+
+[node name="OperatorCabin" type="Node3D" parent="RideAreas/MinhocaoCoaster"]
+position = Vector3(19.600, 0.05, -16.200)
+rotation = Vector3(0.000, 0.000, 0.000)
+
+[node name="Model" parent="RideAreas/MinhocaoCoaster/OperatorCabin" instance=ExtResource("e_k_stall_information")]
+scale = Vector3(1.700, 1.700, 1.700)
+
+[node name="Body" type="StaticBody3D" parent="RideAreas/MinhocaoCoaster/OperatorCabin"]
+
+[node name="Shape" type="CollisionShape3D" parent="RideAreas/MinhocaoCoaster/OperatorCabin/Body"]
+position = Vector3(0.000, 1.275, -0.128)
+shape = SubResource("s_minhocao_cabin")

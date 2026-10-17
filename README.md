@@ -12,7 +12,7 @@ Controls: WASD to move, mouse to look, Shift to run, Space to jump, Esc to free 
 - Brick entrance wall with the two yellow arches and the blue wall.
 - Ticket stand (retro store kit) and the bathrooms building, with a PSX bathroom interior you can walk into from the west side.
 - Fenced, textured areas for the rocking pirate ship, chair swings, Minhocão coaster and bumper cars.
-- The Minhocão coaster (`assets/rides/minhocao/minhocao_coaster.glb`): an oval track with one small hill and a 5-car caterpillar train with the Minhocão face, parked on the straight. It doesn't move yet.
+- The Minhocão coaster (`assets/rides/minhocao/minhocao_coaster.glb`): an oval track with one small hill and a 5-car caterpillar train with the Minhocão face, parked on the straight. It doesn't move yet. A railed queue (Kenney Coaster Kit) runs from the fence opening along the fence to the ride entrance by the train, and a small operator cabin stands by the queue's corner.
 - Metal fence around the park and lot, bushes along the inside, forest outside.
 
 Everything you can bump into has collision, and invisible walls keep you inside the park and the parking lot.
